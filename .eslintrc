@@ -1,3 +1,9 @@
 {
+  "rules": {
+    "prettier/prettier": "warn",
+    "no-unused-vars": "warn",
+    "node/no-extraneous-import": "off",
+    "node/no-unpublished-import": ["error", { "devDependencies": true }]
+  },
   "extends": "./node_modules/gts/"
 }
