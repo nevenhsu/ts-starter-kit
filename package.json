@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "description": "",
   "module": "node",
-  "main": "build/src/index.js",
-  "types": "build/src/index.d.ts",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
   "files": [
     "build/src"
   ],
@@ -12,9 +12,9 @@
   "keywords": [],
   "scripts": {
     "ts": "ts-node -r ./.env.ts -r tsconfig-paths/register --transpile-only",
-    "start": "npm run ts -- src/index.ts",
-    "start:watch": "ts-node-dev -r tsconfig-paths/register --poll --respawn --transpile-only src/index.ts",
-    "start:js": "tsc && node -r tsconfig-paths/register ./build/src/index.js",
+    "start": "npm run ts -- index.ts",
+    "start:watch": "ts-node-dev -r tsconfig-paths/register --poll --respawn --transpile-only index.ts",
+    "start:js": "tsc && node -r tsconfig-paths/register ./build/index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "gts lint",
     "clean": "gts clean",
